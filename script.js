@@ -5,6 +5,32 @@ qAmount = 0;
 hAmount = 0;
 dollAmount = 0;
 
+//Reset
+function reset()
+{
+    pAmount = 0;
+    nAmount = 0;
+    dAmount = 0;
+    qAmount = 0;
+    hAmount = 0;
+    dollAmount = 0;
+    pDisplay();
+    nDisplay();
+    dDisplay();
+    qDisplay();
+    hDisplay();
+    dollDisplay();
+    cal();
+}
+
+function resetButton()
+{
+    const r = document.createElement("button");
+    r.textContent = "RESET ALL";
+    document.body.appendChild(r);
+    r.addEventListener("click", reset);
+}
+
 //Total
 function cal()
 {
@@ -78,7 +104,7 @@ function pDisplay()
     pValue.innerHTML = "$" + (pAmount * 0.01).toFixed(2);
 }
 
-//Nickle
+//Nickel
 function nButtons()
 {
     const s5 = document.createElement("button");
@@ -133,7 +159,7 @@ function nAdd5()
 }
 function nDisplay()
 {
-    Nickle.innerHTML = nAmount;
+    Nickel.innerHTML = nAmount;
     nValue.innerHTML = "$" + (nAmount * 0.05).toFixed(2);
 }
 
