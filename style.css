@@ -35,20 +35,6 @@ button
     border-color:rgb(239, 197, 83);
 }
 
-#reset
-{
-    font-size: 18px;
-    font-weight: bold;
-
-    padding: 4px 12px;
-    margin-right: 10px;
-
-    border-width: 4px;
-    border-radius: 10px;
-    background-color:rgb(222, 42, 22);
-    border-color:rgb(154, 33, 33);
-}
-
 #pic
 {
     float: right;
