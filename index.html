@@ -11,32 +11,44 @@
 </head>
 <body>
     <h1>Count de Money</h1>
-    <p>Welcome to the Count De Money game! You will choose how much coins you want to place and then ask Mister Counter de Money to calculate the total.</p>
+    <p id = "intro">Welcome to the Count De Money game! You will choose how much coins you want to place and then ask Mister Counter de Money to calculate the total.</p>
     
     <img id = "pic" src = "images/MonopolyMan.png" width = "500" height = "400" alt = "Rich Old Man"></img>
     
-    <img id = "coin" src = "images/Penny.png" width = "75" height = "75" alt = "Penny"></img>
+    <div id = "coin">
+    <img src = "images/Penny.png" width = "75" height = "75" alt = "Penny"></img>
     <p>Pennies: <span id = "Penny">0</span> Value: <span id = "pValue">$0.00</span></p>
+    </div>
     <script>pButtons();</script>
 
-    <img id = "coin" src = "images/Nickel.png" width = "75" height = "75" alt = "Penny"></img>
+    <div id = "coin">
+    <img src = "images/Nickel.png" width = "75" height = "75" alt = "Penny"></img>
     <p>Nickels: <span id = "Nickel">0</span> Value: <span id = "nValue">$0.00</span></p>
+    </div>
     <script>nButtons();</script>
 
-    <img id = "coin" src = "images/Dime.png" width = "75" height = "60" alt = "Penny"></img>
+    <div id = "coin">
+    <img src = "images/Dime.png" width = "75" height = "60" alt = "Penny"></img>
     <p>Dimes: <span id = "Dime">0</span> Value: <span id = "dValue">$0.00</span></p>
+    </div>
     <script>dButtons();</script>
 
-    <img id = "coin" src = "images/Quarter.png" width = "75" height = "75" alt = "Penny"></img>
+    <div id = "coin">
+    <img src = "images/Quarter.png" width = "75" height = "75" alt = "Penny"></img>
     <p>Quarters: <span id = "Quarter">0</span> Value: <span id = "qValue">$0.00</span></p>
+    </div>
     <script>qButtons();</script>
 
-    <img id = "coin" src = "images/HalfDollar.png" width = "75" height = "75" alt = "Penny"></img>
+    <div id = "coin">
+    <img src = "images/HalfDollar.png" width = "75" height = "75" alt = "Penny"></img>
     <p>Half Dollars: <span id = "hDoll">0</span> Value: <span id = "hValue">$0.00</span></p>
+    </div>
     <script>hButtons();</script>
 
-    <img id = "coin" src = "images/Dollar.png" width = "75" height = "75" alt = "Penny"></img>
+    <div id = "coin">
+    <img src = "images/Dollar.png" width = "75" height = "75" alt = "Penny"></img>
     <p>Dollars: <span id = "Dollar">0</span> Value: <span id = "dollValue">$0.00</span></p>
+    </div>
     <script>dollButtons();</script>
 
     <h2>Total: <span id = "total">$0.00</span></h2>
