@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Count de Money</title>
+    <!DOCTYPE html>
+    <html lang="en">
+    <script src = "script.js"></script>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <h1>Count de Money</h1>
+    <p id = "intro">Welcome to the Count De Money game! You will choose how much coins you want to place and then ask Mister Count de Money to calculate the total.</p>
+    
+    <img id = "pic" src = "images/MonopolyMan.png" width = "500" height = "400" alt = "Rich Old Man"></img>
+    
+    <div id = "coin">
+    <img src = "images/Penny.png" width = "75" height = "75" alt = "Penny"></img>
+    <p>Pennies: <span id = "Penny">0</span> Value: <span id = "pValue">$0.00</span></p>
+    </div>
+    <script>pButtons();</script>
+
+    <div id = "coin">
+    <img src = "images/Nickel.png" width = "75" height = "75" alt = "Penny"></img>
+    <p>Nickels: <span id = "Nickel">0</span> Value: <span id = "nValue">$0.00</span></p>
+    </div>
+    <script>nButtons();</script>
+
+    <div id = "coin">
+    <img src = "images/Dime.png" width = "75" height = "60" alt = "Penny"></img>
+    <p>Dimes: <span id = "Dime">0</span> Value: <span id = "dValue">$0.00</span></p>
+    </div>
+    <script>dButtons();</script>
+
+    <div id = "coin">
+    <img src = "images/Quarter.png" width = "75" height = "75" alt = "Penny"></img>
+    <p>Quarters: <span id = "Quarter">0</span> Value: <span id = "qValue">$0.00</span></p>
+    </div>
+    <script>qButtons();</script>
+
+    <div id = "coin">
+    <img src = "images/HalfDollar.png" width = "75" height = "75" alt = "Penny"></img>
+    <p>Half Dollars: <span id = "hDoll">0</span> Value: <span id = "hValue">$0.00</span></p>
+    </div>
+    <script>hButtons();</script>
+
+    <div id = "coin">
+    <img src = "images/Dollar.png" width = "75" height = "75" alt = "Penny"></img>
+    <p>Dollars: <span id = "Dollar">0</span> Value: <span id = "dollValue">$0.00</span></p>
+    </div>
+    <script>dollButtons();</script>
+
+    <h2>Total: <span id = "total">$0.00</span></h2>
+    <script>totalButton();</script>
+
+    <script>resetButton();</script>
+</body>
+</html>
