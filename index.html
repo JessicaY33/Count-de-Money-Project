@@ -2,58 +2,167 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Count de Money</title>
-    <!DOCTYPE html>
-    <html lang="en">
-    <script src = "script.js"></script>
-    <link href="style.css" rel="stylesheet" type="text/css" />
+    <title>Basic CSS</title>
+    <script src = "utilities.js"></script>
+    <link rel = "stylesheet" href = "css test file.css" />
+    <script>
+        // function initalize()
+        // {
+        //     halloweenText = document.getElementById("colordiv");
+            
+        //     fore = "black";
+        //     back = "orange";
+
+        //     textWidth = 100;
+        // }
+        // function initalize()
+        // {
+        //     textOutput = document.getElementById("textdiv");
+        //     fontSizeOutput = document.getElementById("sizeout");
+        //     fontSize = 24;
+        // }
+        function initalize()
+        {
+            numberOutput = document.getElementById("numout");
+            rndNum = 0;
+            display();
+        }
+        // function toggleColor()
+        // {
+        //     var tmp = fore;
+        //     fore = back;
+        //     back = tmp;
+
+        //     display();
+        // }
+        // function display()
+        // {
+        //     halloweenText.style.color = fore;
+        //     halloweenText.style.backgroundColor = back;
+        //     halloweenText.style.width = textWidth + "%";
+        // }
+        // function display()
+        // {
+        //     fontSizeOutput.innerHTML = fontSize;
+        //     textOutput.style.fontSize = fontSize + "pt";
+        // }
+        function display()
+        {
+            numberOutput.innerHTML = rndNum;
+        }
+        // function changeWidth(w)
+        // {
+        //     textWidth = w;
+        //     display();
+        // }
+        // function modifyFontSize(mod)
+        // {
+        //     fontSize += mod;
+        //     if(fontSize < 4)
+        //     {
+        //         fontSize = 4;
+        //     }
+        //     display();
+        // }
+        function changeNumber()
+        {
+            rndNum = getRandomInteger(1, 10);
+            display();
+        }
+    </script>
+    <style>
+        /* #RRGGBB */
+        body
+        {
+            /* background-color: cornflowerblue; */
+            color:green;
+        }
+        #colordiv
+        {
+            /* justify will adjust the spacing between words to make each line the same width */
+            /* text-align: justify; */
+            /* color:red; */
+            color: black;
+            background-color: orange;
+        }
+        #textdiv
+        {
+            /* font-family: comic sans ms;
+            font-size: 24pt;
+            font-weight: bold; */
+            font: bold 24pt comic sans ms;
+            text-decoration: underline wavy green;
+            /* text-decoration: underline;
+            text-decoration-color: green;
+            text-decoration-style: wavy; */
+        }
+        span
+        {
+            /* #RRGGBB */
+            color:#22A3F0;
+            /* color:rgba(22, 117, 221, 0.5); */
+            /* a = alpha (0,1) 0 - invisible 1 - solid */
+        }
+        img
+        {
+            float: left;
+            height: 100%;
+            padding-right: 20px;
+            /* text-align: center; */
+        }
+        a
+        {
+            font: 24pt arial;
+            color: blue;
+            text-decoration: none;
+        }
+    </style>
+    <link href = "style.css" rel = "stylesheet" type = "text/css">
 </head>
-<body>
-    <h1>Count de Money</h1>
-    <p id = "intro">Welcome to the Count De Money game! You will choose how much coins you want to place and then ask Mister Count de Money to calculate the total.</p>
-    
-    <img id = "pic" src = "images/MonopolyMan.png" width = "500" height = "400" alt = "Rich Old Man"></img>
-    
-    <div id = "coin">
-    <img src = "images/Penny.png" width = "75" height = "75" alt = "Penny"></img>
-    <p>Pennies: <span id = "Penny">0</span> Value: <span id = "pValue">$0.00</span></p>
+<body onload = "initialize();">
+     This is the text on my basic CSS page.
+    <div>
+        This is the text in my <span>span</span> in my div.
     </div>
-    <script>pButtons();</script>
-
-    <div id = "coin">
-    <img src = "images/Nickel.png" width = "75" height = "75" alt = "Penny"></img>
-    <p>Nickels: <span id = "Nickel">0</span> Value: <span id = "nValue">$0.00</span></p>
+    <div>
+    <!-- one tag = no innerhtml -->
+    <img src = "doctor who.jpg"/> 
     </div>
-    <script>nButtons();</script>
-
-    <div id = "coin">
-    <img src = "images/Dime.png" width = "75" height = "60" alt = "Penny"></img>
-    <p>Dimes: <span id = "Dime">0</span> Value: <span id = "dValue">$0.00</span></p>
+    <span>Where's Papa going with that ax?" said Fern to her mother as they were setting the table for breakfast. "Out to the hoghouse," replied Mrs. Arable. "Some pigs were born last night." "I don't see why he needs an ax," continued Fern, who was only eight. "Well," said her mother, "one of the pigs is a runt. It's very small and weak, and it will never amount to anything. So your father has decided to do away with it." "Do away with it?" shrieked Fern. "You mean kill it? Just because it's smaller than the others?" Mrs. Arable put a pitcher of cream on the table. "Don't yell, Fern!" she said. "Your father is right. The pig would probably die anyway." Fern pushed a chair out of the way and ran outdoors. The grass was wet and the earth smelled of springtime. Fern's sneakers were sopping by the time she caught up. with her father.</span>
+    <!-- <hr />
+    <h1>Old Doctors</h1>
+    <img src = "images/jon pertwee.jpg" />
+    <img src = "images/tom baker.jpg" />
+    <img src = "images/matt smith.jpg" /> -->
+    <div id = "colordiv">
+        Click the button to switch me from black to orange and back again and again. Happy Halloween.
     </div>
-    <script>dButtons();</script>
-
-    <div id = "coin">
-    <img src = "images/Quarter.png" width = "75" height = "75" alt = "Penny"></img>
-    <p>Quarters: <span id = "Quarter">0</span> Value: <span id = "qValue">$0.00</span></p>
+    <p>
+        <button onclick = "toggleColor();">Toggle Colors</button>
+        <button onclick = "changeWidth(25);">25% Width</button>
+        <button onclick = "changeWidth(50);">50% Width</button>
+        <button onclick = "changeWidth(75);">75% Width</button>
+        <button onclick = "changeWidth(100);">100% Width</button>    
+    </p>
+    <div id = "textdiv">
+        I am a wonderful example of how fonts work!
     </div>
-    <script>qButtons();</script>
-
-    <div id = "coin">
-    <img src = "images/HalfDollar.png" width = "75" height = "75" alt = "Penny"></img>
-    <p>Half Dollars: <span id = "hDoll">0</span> Value: <span id = "hValue">$0.00</span></p>
-    </div>
-    <script>hButtons();</script>
-
-    <div id = "coin">
-    <img src = "images/Dollar.png" width = "75" height = "75" alt = "Penny"></img>
-    <p>Dollars: <span id = "Dollar">0</span> Value: <span id = "dollValue">$0.00</span></p>
-    </div>
-    <script>dollButtons();</script>
-
-    <h2>Total: <span id = "total">$0.00</span></h2>
-    <script>totalButton();</script>
-
-    <script>resetButton();</script>
+    <hr />
+    <p>
+        <div>Current font size: <span id = "sizeout"></span> point</div>
+        <button onclick = "modifyFontSize(1);">Font Size ++</button>
+        <button onclick = "modifyFontSize(-1);">Font Size --</button>
+    </p>
+    <hr />
+    <h1>This is my great page about external files</h1>
+    <p id = "numout"></p>
+    <button onclick = "changeNumber();">Change the number</button>
+    <hr />
+    <h1>This is my home page</h1>
+    <a href = "destination.html">Link to Destination Page</a><br /><br/>
+    <!-- target creates a new tab -->
+    <a href = "http://google.com" target = "_blank">Link to Google</a>
 </body>
 </html>
